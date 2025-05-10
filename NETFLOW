@@ -10,7 +10,7 @@ flow record CCNP8-CUSTOM-OUT
 	collect counter packets
 	end
 
-!!!Create a FLOW EXPORTER:
+!!!Create a FLOW EXPORTER: LALABAS SA EXAM
 conf t
 flow exporter CCNP8-COLLECTOR-HOST
 destination 192.168.104.1
