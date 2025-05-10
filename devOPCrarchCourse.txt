@@ -6,8 +6,8 @@ python.exe -m pip install --upgrade pip
 pip install ascii_magic
 pip install beautifulsoup4
 pip install requests
-
-
+yum install -y nmap
+yum install -y vim
 #Task1
 enable IOX:
 
@@ -114,7 +114,22 @@ rob_cm = '''hostname CSRPYTHON
 cli.configurep(rob_cm)
 
 ex.5: Create 4 loopbacks:
+vim loop1.py
 
+import cli
+
+cmd1 = '''hostname NETDEVOPS
+int loop4
+ip add 4.4.4.4 255.255.255.255
+int loop5
+ip add 5.5.5.5 255.255.255.255
+int loop6
+ip add 6.6.6.6 255.255.255.255
+end
+'''
+cli.configure(cmd1)
+
+ex.6 DHCP server via PYTHON:
 import cli
 
 commands = '''
